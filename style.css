@@ -1,0 +1,137 @@
+/* Default Theme Colors */
+:root {
+    --primary-color: #9b4f96; /* Default purple color */
+    --secondary-color: #d3a2ff;
+    --background-color: #1f1f1f;
+    --text-color: #fff;
+    --button-color: #d3a2ff;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px;
+    background-color: var(--primary-color);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Goal Section */
+.goal-list {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: var(--primary-color);
+    margin: 10px 0;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: var(--button-color);
+}
+
+/* Remove Button for each Goal */
+button.remove {
+    background-color: #ff4c4c;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1rem;
+}
+
+button.remove:hover {
+    background-color: #ff8080;
+}
+
+/* Add Goal Input */
+.add-goal {
+    display: flex;
+    margin-top: 20px;
+}
+
+.add-goal input {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.add-goal button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-goal button:hover {
+    background-color: var(--button-color);
+}
+
+/* Color Switcher */
+.color-switcher {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.color-switcher button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.color-switcher button:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
